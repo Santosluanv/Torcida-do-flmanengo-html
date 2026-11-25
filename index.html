@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#b90016">
+    <title>Jovem Fla | Paixão e Vibração</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #101010;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #b90016;
+            padding: 22px 20px;
+            text-align: center;
+            border-bottom: 4px solid #fff;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 0.95rem;
+            margin-top: 5px;
+            color: #fff;
+        }
+
+        .hero {
+            min-height: 420px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            background:
+                linear-gradient(rgba(0,0,0,.78), rgba(0,0,0,.85)),
+                linear-gradient(135deg, #b90016, #111 60%);
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #d00020;
+            color: white;
+            padding: 15px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: .3s;
+        }
+
+        .button:hover {
+            background: #fff;
+            color: #b90016;
+            transform: translateY(-3px);
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #ed001f;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            font-weight: 900;
+        }
+
+        .history {
+            background: #181818;
+            text-align: center;
+        }
+
+        .history p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.15rem;
+        }
+
+        .chants {
+            background: #101010;
+        }
+
+        .chant-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .chant-card {
+            background: #1c1c1c;
+            border-left: 5px solid #c9001b;
+            padding: 25px;
+            border-radius: 8px;
+            transition: .3s;
+        }
+
+        .chant-card:hover {
+            transform: translateY(-5px);
+            background: #292929;
+        }
+
+        .chant-card h3 {
+            color: #ff263d;
+            margin-bottom: 12px;
+            font-size: 1.15rem;
+        }
+
+        .chant-card p {
+            color: #ddd;
+        }
+
+        .join {
+            background: #b90016;
+            text-align: center;
+        }
+
+        .join h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .join p {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+
+        .join .button {
+            background: #fff;
+            color: #b90016;
+        }
+
+        .join .button:hover {
+            background: #111;
+            color: #fff;
+        }
+
+        footer {
+            background: #080808;
+            text-align: center;
+            padding: 22px;
+            color: #aaa;
+            font-size: .9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.7rem;
+            }
+
+            section {
+                padding: 45px 18px;
+            }
+
+            .hero {
+                min-height: 360px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>⚽ Jovem Fla ⚽</h1>
+        <p>A maior torcida organizada do Brasil</p>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Uma paixão que não tem limites!</h2>
+                <p>Faça parte da maior torcida organizada do mundo.</p>
+
+                <a
+                    class="button"
+                    href="https://youtu.be/OhaV6OP9IA4?si=zXIQ2Gwo3p10unip"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Clique e venha participar
+                </a>
+            </div>
+        </section>
+
+        <section class="history">
+            <div class="container">
+                <h2 class="section-title">Nossa história</h2>
+
+                <p>
+                    <strong>Jovem Fla:</strong> Uma história de dedicação e
+                    vibração. Onde estiver o Flamengo, a Jovem estará presente!
+                    Nossa paixão pelo Mengão é demonstrada em cada jogo,
+                    em cada canto e em cada demonstração de apoio.
+                </p>
+            </div>
+        </section>
+
+        <section class="chants">
+            <div class="container">
+                <h2 class="section-title">
+                    Principais cantos da nossa torcida
+                </h2>
+
+                <div class="chant-list">
+
+                    <article class="chant-card">
+                        <h3>01 — Nosso Lema é Vibração</h3>
+                        <p>
+                            Canto que destaca a identidade, a energia
+                            e a vibração da Jovem Fla.
+                        </p>
+                    </article>
+
+                    <article class="chant-card">
+                        <h3>02 — Deixa Passar a Jovem Fla</h3>
+                        <p>
+                            Grito tradicional de apresentação
+                            e reconhecimento da torcida.
+                        </p>
+                    </article>
+
+                    <article class="chant-card">
+                        <h3>03 — Êêoo, Sou da Jovem Fla</h3>
+                        <p>
+                            Canto de identificação, união
+                            e orgulho de fazer parte da organizada.
+                        </p>
+                    </article>
+
+                    <article class="chant-card">
+                        <h3>04 — Voa, Voa, Urubu</h3>
+                        <p>
+                            Canto de apoio ao Flamengo que utiliza
+                            o urubu, mascote do clube, como símbolo.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="join">
+            <div class="container">
+                <h2>Venha fazer parte dessa história!</h2>
+
+                <p>
+                    Vista as cores, viva a paixão e faça parte
+                    dessa grande história rubro-negra.
+                </p>
+
+                <a
+                    class="button"
+                    href="https://youtu.be/OhaV6OP9IA4?si=zXIQ2Gwo3p10unip"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Quero participar
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>⚫🔴 Jovem Fla — Paixão, dedicação e vibração.</p>
+        <p>© 2026 — Todos os direitos reservados.</p>
+    </footer>
+
+</body>
